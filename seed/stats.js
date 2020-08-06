@@ -29,16 +29,16 @@ const addStats = async () => {
   await Promise.all(statsSeed.map(async statsToAdd => {
 
         // find artist document with matching name
-        let artist = await Character.findOne({name: recordToAdd.artist})
+        let character = await Character.findOne({name: statsToAdd.character})
 
         // update object with artist ID
-        recordToAdd.artist = artist._id
+        statsToAdd.character = character._id
 
         // create record
         const stats = await Stats.create(statsToAdd)
         console.log(stats)
 
-        await character.records.push(record._id)
+        await character.records.push(stats._id)
         await character.save()
         console.log(character)
     }))
