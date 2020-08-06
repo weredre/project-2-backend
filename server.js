@@ -39,7 +39,7 @@ db.on("disconnected", () => console.log("mongo disconnected"));
 // CORS SECURITY CONFIGURATIONS
 /////////////////////
 // CREATE A WHITELIST OF WHICH WEBSITES CAN MAKE API CALLS TO YOUR SERVER
-const whitelist = ["http://localhost:3000/", "http://example2.com"];
+const whitelist = ["http://localhost:3000/", "https://project-2-back-end.herokuapp.com/"];
 const corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
