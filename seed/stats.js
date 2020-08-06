@@ -11,7 +11,7 @@ const statsSeed = [
 
     STR:4, AGL:6, WIL:3,LOG:6,CHA:2,EDG:2,character:"Gentry"},
   {
-    STR:5, AGL:6, WIL:3,LOG:6,CHA:3,EDG:1, character:"Hardpoint"}
+    STR:5, AGL:6, WIL:3,LOG:6,CHA:3,EDG:1, character:"Hardpoint"
   },
   {
 
@@ -20,7 +20,7 @@ const statsSeed = [
   {
 
     STR:7, AGL:4, WIL:3,LOG:1,CHA:1,EDG:1
-  , character:"Bug Spirt"} },
+  , character:"Bug Spirt"},
   {
 
     STR:4, AGL:4, WIL:3,LOG:3,CHA:2,EDG:2
