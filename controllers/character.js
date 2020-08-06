@@ -1,5 +1,7 @@
 const db = require('../db/index.js')
 const Character = require('../models/characters')
+const Stats = require('../models/stats')
+
 
 const findAllcharacters = async () => {
     const characters = await Character.find()
