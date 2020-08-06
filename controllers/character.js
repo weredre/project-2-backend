@@ -1,4 +1,4 @@
-const db = require('../db/index.js')
+// const db = require('../db/index.js')
 const Character = require('../models/characters')
 const Stats = require('../models/stats')
 

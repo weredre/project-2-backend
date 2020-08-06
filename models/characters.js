@@ -15,4 +15,4 @@ const charactersSchema = new Schema (
 
 const character = model('characters', charactersSchema)
 
-module.exports = character;
+module.exports = character

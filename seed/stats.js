@@ -48,6 +48,7 @@ const addStats = async () => {
   db.close()
 
 }
+// module.exports = Stats
 
 // invoke the async function
 addStats()

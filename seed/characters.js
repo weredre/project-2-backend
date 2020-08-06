@@ -18,3 +18,4 @@ Character.insertMany(characterSeed,
           console.log(response);
       }
       db.close()
+module.exports = Character
