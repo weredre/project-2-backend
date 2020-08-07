@@ -1,6 +1,6 @@
 const express = require("express");
 const characterRouter = express.Router();
-const { index, create, update, destroy } = require("../controllers/character");
+const { index, create, update, destroy } = require("../controllers/character.js");
 
 
 characterRouter.get("/", index);

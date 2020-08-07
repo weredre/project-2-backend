@@ -1,5 +1,5 @@
 const db = require('../db')
-const Character = require('../models/characters')
+const Character = require('../models/characters.js')
 
 
 const characterSeed = [

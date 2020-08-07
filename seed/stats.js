@@ -1,6 +1,6 @@
 const db = require('../db')
-const Character = require('../models/characters')
-const Stats = require('../models/stats')
+const Character = require('../models/characters.js')
+const Stats = require('../models/stats.js')
 
 const statsSeed = [
   {
@@ -48,7 +48,7 @@ const addStats = async () => {
   db.close()
 
 }
-// module.exports = Stats
+module.exports = Stats
 
 // invoke the async function
 addStats()
