@@ -10,7 +10,8 @@ const charactersSchema = new Schema (
     WIL:{type:Number},
     LOG:{type:Number},
     CHA:{type:Number},
-    EDG:{type:Number}    
+    EDG:{type:Number},
+    shadowAmps:String
     });
 
 const character = model('characters', charactersSchema)

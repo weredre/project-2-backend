@@ -3,7 +3,7 @@ const {Schema, model} = mongoose
 
 const shadowAmpsSchema = new Schema(
     {
-      name:{type:STRING},
+      name:{type:String},
       damage:{type:Number},
     }
 )

@@ -9,6 +9,8 @@ const morgan = require("morgan"); //Brings in Morgan Library
 const cors = require("cors"); //Brings in CORS library
 const mongoose = require("mongoose"); //bring in mongoose library
 const characterRouter = require("./routes/character.js")
+const shadowAmpsRouter = require("./routes/shadowAmps.js"); // <---------- bring in Pizza Router
+
 //////////////////////
 //GlOBAL VARIABLES
 /////////////////////
@@ -67,6 +69,7 @@ app.use(express.static("public")); //Allows static serving of files from public 
 ////////////////////
 //These handle sending responses to server requests for spefic endpoints
 app.use("/character", characterRouter)
+app.use("/shadowAmps", shadowAmpsRouter)
 ///////////////////////////
 //ROOT ROUTE (FOR TESTING)
 ///////////////////////////
