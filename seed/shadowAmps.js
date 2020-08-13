@@ -1,7 +1,7 @@
 const db = require('../db')
 const shadowAmps = require('../models/shadowAmps.js')
 
-const shadowAmps = [
+const shadowAmpsSeed = [
   {name: "Lightening Bolt",damage:6},
   {name:"Acid Spit", damage:7}
 ]
