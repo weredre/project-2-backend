@@ -5,12 +5,12 @@ const charactersSchema = new Schema (
     {
     name:{type:String},
     isNPC:{type:Boolean},
-    stats: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'stats'
-      }
-    ]
+    STR:{type:Number},
+    AGL:{type:Number},
+    WIL:{type:Number},
+    LOG:{type:Number},
+    CHA:{type:Number},
+    EDG:{type:Number}    
     });
 
 const character = model('characters', charactersSchema)
