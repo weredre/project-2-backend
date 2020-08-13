@@ -5,15 +5,15 @@ const shadowAmps = require('../models/shadowAmps.js')
 const index = async (req, res) => {
     try{
       const allCharacters = await Characters.find({});
-
-      const characters = allCharacters.map(async (character) => {
-      const shadowAmps = await shadowAmps.findById(character.shadowAmps);
-      return {
-        name: character.name,
-        shadowAmps,
-      };
-    })
-    res.status(200).json(character);
+      console.log(allCharacters)
+    //   const characters = allCharacters.map(async (character) => {
+    //   const shadowAmps = await shadowAmps.findById(character.shadowAmps);
+    //   return {
+    //     name: character.name,
+    //     shadowAmps,
+    //   };
+    // })
+    res.status(200).json(allCharacters);
     }
     catch(error){
       res.status(400).send(error)
